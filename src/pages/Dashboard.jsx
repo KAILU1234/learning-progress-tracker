@@ -8,10 +8,13 @@ const sampleStats = [
 
 export default function Dashboard() {
   return (
-    <div className="p-6 space-y-4">
-      <h2 className="text-2xl font-bold">Your Progress</h2>
+    <div className="p-6 space-y-6">
+      {/* Clear, visible heading */}
+      <h2 className="text-2xl font-bold text-gray-800">
+        Your Progress
+      </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {sampleStats.map((course, index) => (
           <ProgressCard
             key={index}
